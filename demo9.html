@@ -19,7 +19,7 @@
         button{
             border: none;
             font-size: 16px;
-            padding:24px;
+            padding:10px;
             background-color: #4CAF50;
         }
         li{
@@ -29,11 +29,16 @@
             margin-right: 20%;
             margin-left:20%
         }
+        #b{
+            padding:10px;
+        }
     </style>
     <body>
         <header>
             <section>
-                <button id="add-item" >Add items</button>
+                <input type="text" id="b" placeholder="Enter items here" onkeypress="return event.charCode != 32">
+                <input type="submit" id="add-item" value="add item" >
+
                 <ul id="todo-list">
                     <li>ListItem1</li>
                     <li>ListItem2</li>
