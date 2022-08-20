@@ -1,18 +1,27 @@
 
 var btn=document.getElementById("add-item");
 var list=document.getElementById("todo-list");
-var count=4;
-btn.addEventListener('click',function(){
-    
+var b=document.getElementById('b');
+var msg="";
+b.addEventListener('input',function(e){
+    msg=e.target.value;
+});
+b.addEventListener('keyup',function(e){
+    if(e.keyCode===13)
+        addItems();
+        
+});
+function addItems(){
+    if(msg!==undefined && msg!==null && msg!==''){
     var x=document.createElement('li');
-    var y=document.getElementById('b');
-   
-    if(y.value.length==0 ){
-        alert("please enter items");
-    }else{
-    x.appendChild(document.createTextNode(y.value));
-    count++;
-    y.value="";
+    x.appendChild(document.createTextNode(msg));
+    b.value='';
+    msg='';
     list.appendChild(x);
     }
-});
+    else{
+        alert("please enter items");
+        }
+    
+};
+btn.addEventListener('click',addItems);
