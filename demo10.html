@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            Update and Delete HTML Elements
+        </title>
+    </head>
+    <style>
+        section{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            font-size: 24px;
+            border: none;
+        }
+        body{
+           background-color: aquamarine;
+        }
+        button{
+            border: none;
+            font-size: 16px;
+            padding:20px;
+            background-color: #4CAF50;
+        }
+        li{
+            background-color: beige;
+            margin-top: 10px;
+            padding:10px;
+            margin-right: 20%;
+            margin-left:20%;
+            border: none;
+            
+        }
+        #b{
+            padding:10px;
+        }
+        td,th{
+            padding:20px;
+        }
+        input{
+            padding:20px;
+            border: none;
+           
+            
+            
+        }
+
+    </style>
+    <body>
+        <header>
+            <section>
+                <input type="text" id="b" placeholder="Enter items here" onkeypress="return event.charCode != 32"><br>
+                <table align="center">
+                    <th>
+                        <td>
+                    <input type="submit" id="add-item" value="Add ListItem" >
+                </td>
+                <td>
+                    <input type="submit" id="up-item" value="Update FirstItem" >
+                </td>
+                <td>
+                    <input type="submit" id="del-item" value="Delete FirstItem" >
+                </td>
+                </th>
+                </table>
+                <ul id="todo-list">
+                    
+                </ul>
+            </section>
+        </header>
+    </body>
+    <script type="text/javascript" src="demo10.js"></script>
+</html>
