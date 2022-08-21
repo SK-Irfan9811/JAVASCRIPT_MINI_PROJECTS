@@ -3,6 +3,7 @@
         <title>
             Update and Delete HTML Elements
         </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     </head>
     <style>
         section{
@@ -29,8 +30,8 @@
             margin-right: 20%;
             margin-left:20%;
             border: none;
-            
         }
+      
         #b{
             padding:10px;
         }
@@ -40,11 +41,12 @@
         input{
             padding:20px;
             border: none;
-           
-            
-            
+   
         }
-
+        #todo-list{
+            background-color: aliceblue;
+        }
+      
     </style>
     <body>
         <header>
@@ -54,6 +56,7 @@
                     <th>
                         <td>
                     <input type="submit" id="add-item" value="Add ListItem" >
+                   
                 </td>
                 <td>
                     <input type="submit" id="up-item" value="Update FirstItem" >
@@ -63,11 +66,12 @@
                 </td>
                 </th>
                 </table>
-                <ul id="todo-list">
-                    
-                </ul>
+                <div id="todo-list">
+
+                </div>
             </section>
         </header>
+           
     </body>
     <script type="text/javascript" src="demo10.js"></script>
 </html>
