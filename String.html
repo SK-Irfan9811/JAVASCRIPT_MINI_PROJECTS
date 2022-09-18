@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            String Operations
+        </title>
+    </head>
+    <script>
+        //upperCase
+        //var str="This is my string";
+        //document.write(str.toUpperCase());
+        //document.write(/n);
+        
+        //lowerCase
+        //document.write(str.toLowerCase());
+        //concat
+        //document.write(str.concat(str));
+        //trim()-->removes space
+        //var c="    Ir  faN   ";
+        //document.write(c.trim());
+        //split(),charAt()....
+        function fun(a,b){
+        
+       document.write(a+b);
+        }
+        /*var day='1';
+        switch(day){
+            case '1':
+                document.write("pass");
+                
+            default:
+                document.write("Its me");    
+        }*/
+        //objects
+        /*var me={
+            height:5.9,
+            weight:67,
+            hair:"black",
+            studies:{
+              metrics:"Montessori",
+              inter:"Bhashyam",
+              degree:"MBU"
+            },
+            sports:{
+                football:"yes",
+                volleyball:"yes",
+                cricket:"yes",
+                kabaddi:"no",
+                eat:function(){
+                    console.log("eating...");
+                }
+            }
+        }*/
+        var list=['i','r','f','a','n'];
+        list.push('h');
+        list.sort().reverse();
+
+        console.log(list);
+        //console.log(me.sports.eat());
+    </script>
+    <body>
+       <!--h1>
+            Enter two values length and breadth
+        </h1>
+        <input type="number" name="length" id=1><br><br>
+        <input type="number" name="breadth" id=2><br> <br>-->
+        <input type="submit"  onclick="fun(3,5)">
+    </body>
+</html>

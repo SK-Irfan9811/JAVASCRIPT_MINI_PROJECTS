@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Mini Ice-Cream Project
+        </title>
+
+    </head>
+    
+        <script>
+           
+            function eat(){
+            var x=document.getElementById("1");
+            x.innerHTML="Finished";
+            document.body.style.backgroundColor="pink";
+            var imgg=document.getElementById("pic");
+            imgg.src="empty.jpg";
+            let btn1=document.getElementById("butt");
+            btn1.value="FILL";
+            fill();
+            }
+            function fill(){
+               var xx=document.getElementById("butt");
+               document.write(xx.value);
+               if(xx.onclick==true){
+                document.write("GG");
+               }
+            }
+            
+        </script>
+        <body style="text-align:center;background-color: aqua;"></body>
+        <p id="1" >Have the Ice-cream</p>
+        <img  id="pic" src="full.jpg" width="300px" height="300px">
+        <input id="butt" type="button" value="Eat now" onclick="eat()">
+    </body>
+</html>

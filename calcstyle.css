@@ -1,0 +1,29 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(229, 237, 237);
+}
+.flex-container{
+    display:flex;
+    background-color: aqua;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+.flex-container > *{
+    flex: 1 1  250px;
+}
+
+.flex-container > div{
+    background-color:rgb(163, 135, 82);
+    margin:10px;
+    padding:10px;
+    font-size:40px;
+    
+}
+#display{
+    background-color: aquamarine;
+    margin-top: 30px;
+    padding:40px;
+    
+}
+

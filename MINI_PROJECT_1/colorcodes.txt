@@ -1,0 +1,5 @@
+Blue - #565681
+Purple - #8a5362
+Black - #23211f
+Red - #ca3d22
+Pink - #e9c7be
