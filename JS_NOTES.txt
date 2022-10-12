@@ -1,0 +1,14 @@
+Regex:/ptr/options
+SET:[ABC]oy
+checks in the input str whether any one of the letter matches in the 
+set given there and later proceeds to the remaining pattern.
+Air Circle ABCir-->Here in the last word only Cir is taken as only one 
+letter has to be taken into consideration
+\d-->for numbers 
+[a-z][A-Z]-->for series follwing this criteria
+[a-zA-z]--> having either a to z or A-Z
+[^\d] or [^0-9]-->selects all except numbers.
+\w-->alphabhet and numbers
+[^\w]-->for special characters.
+\s-->for spaces
+we can put capital letters indicating to the opposite to their natures.

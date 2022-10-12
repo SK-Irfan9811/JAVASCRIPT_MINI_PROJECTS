@@ -1,0 +1,17 @@
+JS-REGEX
+---------------------------------------
+/pattern/modifiers
+pattern
+-----------------------------
+[abc]-->all between a and b
+[^abc]-->not between characters
+[0-9]-->chars between 
+[^0-9]-->not chars
+modifiers
+-----------------------------
+g-->global search
+i -->case in sensitive
+m-->multiline matching
+-------------------------------
+\W-->matches everthing that are not words
+\d-->digits
