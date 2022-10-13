@@ -12,3 +12,56 @@ letter has to be taken into consideration
 [^\w]-->for special characters.
 \s-->for spaces
 we can put capital letters indicating to the opposite to their natures.
+--------------------------------------------------------------------
+var str="some string"
+var patn=/some ptn/
+--------------------------------------------------------------
+console.log(str.search(patn))
+output:-1 if not found 
+           index if found
+--------------------------------------------------------------
+patn.test(str)-->see if the input is in the satisfies the pattern
+return boolean value
+------------------------------------------------------------------------------------------------------------------------------
+str.match(patn)-->returns the array of first matched pattern in str.If globally is searched ,the array of patterns are delivered.
+null on non match scenario
+var patrn=/pattersn/gi;
+g-->globally 
+i-->caseignorance
+-------------------------------------------------------------------------------------------------------------------------------
+Another notation pattern declaration is 
+var pattern=new RegExp("pattrn","gi");
+---------------------------------------------------------------
+we can also use 
+var patn=/[0-9]/gi
+------------------------------------------------------------
+\s---->for white spaces finding
+\S---->for words which are not white spaces
+---------------------------------------------------------
+/./-->which scans th first letter only
+/./g-->which scans the entire string including the white spaces
+/[.]/g-->scans all the dots in the string
+----------------------------------------------------------------------
+Sets are used to to search for characters that are written inside square brackets
+[ABC]ion-->chooses any of the A,B,C if matches.
+IF all the characters are present then last one is chosen for output.
+--------------------------------------------------------
+/[A-Z]oin/
+for email we can have regex as
+[A-Z | a-z | 0-9]@gmail.com]-->regex for email
+pat.test(str)
+--------------------------------------------------------
+\d-->for only digits
+\D-->except digits
+----------------------------------------------------------
+\w-->not for special characters
+\W-->for special characters and spaces
+-------------------------------------------------
+Quantifiers
+------------------------------
+select a value multiple times and can decide how many times 
+should  avalue selected.
+[\d]{3}
+^-->will consider scanning from the strating if not found then output is null
+$-->asserts position from the end of the line
+the "?" in the regex will make its immediate left character to appear 0 ot one time.
