@@ -65,3 +65,6 @@ should  avalue selected.
 ^-->will consider scanning from the strating if not found then output is null
 $-->asserts position from the end of the line
 the "?" in the regex will make its immediate left character to appear 0 ot one time.
+--------------------------------------------------------------------------------------------------------------------------------
+^[\w]{6,8}$-->Ensure the input string is strictly following the rule of being 6 to 8 in length from begining and also from ending.
+--------------------------------------------------------------------------------------------------------------------------------
