@@ -68,3 +68,22 @@ the "?" in the regex will make its immediate left character to appear 0 ot one t
 --------------------------------------------------------------------------------------------------------------------------------
 ^[\w]{6,8}$-->Ensure the input string is strictly following the rule of being 6 to 8 in length from begining and also from ending.
 --------------------------------------------------------------------------------------------------------------------------------
+the "this" keyword
+This key word is used to represent the current value of the variable.
+Suppose we have decalred a variable var name="SK" at the top and in the object we again created a var Name="Irfan".If we use Name in the object we obvibiviosly get "SK" and in order to get the "Irfan" we use this keyword.
+-----------------------------------------------------------------------------------------------------------------------
+HTTP-->Hyper Text transfer protocol
+Requests are send to backend using http protocol.
+-------------------------------------------------------------------------------------------------
+GET-->used to get some data from backend.
+POST-->create a new entries on the backend.
+PUT-->Used to update an existing data entry on the backend.
+DELETE-->delete an existing data entry on the backend.
+---------------------------------------------------------------------------------------------
+Response Codes
+================================
+200-->Success and data is received at the front end.
+400-->bad request backend did not understand the request
+401-->unauthorized  to data access.
+404-->Not found
+500-->somw thing went wrong;faile dat the backend. 
