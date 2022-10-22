@@ -87,3 +87,97 @@ Response Codes
 401-->unauthorized  to data access.
 404-->Not found
 500-->somw thing went wrong;faile dat the backend. 
+------------------------------------------------------------------------------------------------------------------
+JSON-->Java Script Object Notation
+       -->Text format that makes easy to share data between Clients and Servers. 
+var Obj=[{"name":"Irfan","age":20},{"name":"waseem","age":25},{"name":"Arfan","age":10}]
+The above is called JSON array
+The keys in the JSON Object should be double quoted,Otherwise it throws an error while parsing it.
+--------------------------
+TWO METHODS
+--------------------------
+JSON.stringify(obj)-->makes obj as string
+JSON.parse(str)-->makes str to json obj.
+--------------------------------------------------
+In JSON keys must be strings and in java script it can be any
+And in JSON the string values must be in double quotes.
+JSON vs XML
+-----------------------------
+JSON and XML are both used to receive data frin a web server.
+{"Students":[{"name":"Irfan"},{"name":"wasi"},{"name":"arfan"}]}
+XML
+------------
+<students>
+<student>
+<name>
+Irfan
+</name>
+</student> 
+</students>
+XML uses html tags.
+JSON is better than XML
+JSON data can be parsed by a standard javaScript funtion
+XML needs XML parser seperately
+We can store the object in local storage and can retrive later
+-------------------------------------------------------
+localStorage.setItem("testData",myJson);
+var text=localstorage.getItem("testData");
+-------------------------------------------------------
+AJAX-->Asynchronous JavaScript and XML
+Running code in background is called Asynchronous Execution
+AJAX uses built-in XMLHttpRequest Object to send request to the server where server responds to it and javascript updates the content without reloading the page unnecessarily.
+
+
+Fake API-->https://jsonplaceholder.typicode.com/photos
+The syntax for using AJX is 
+-------------------------------
+function getApiData(){
+var http=new XMLHttpRequest();
+http.open("GET","API link",true)true-->Asyncronous or not
+http.send();
+}
+The backend server viz Fake API(here) wil send the data to the 
+client webpage
+We have readyState Property for the request
+0-->UNSENT
+1-->OPENED
+2-->HEADERS RECEIVED
+3-->Req b eing processed
+4-->DONE
+We can use the response data that is sent from the server side and wit the help of js we can embedd into out code without refreshing the page and that too the updated content will come to the page every time the page is opened from API.
+We can post the data using XML request and send data to the API server and fetch it back 
+---------------------------------------------
+JQUERY
+---------------------------------------------
+-->js library
+-->fat and feature rich
+-->write less do more
+-->DOM manipulation
+-->CSS manipulation
+-->HTML event
+-->Effects and animations
+-->AJAX calls
+we need to embedd the code in order to use it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
